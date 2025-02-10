@@ -365,3 +365,31 @@ console.log('Conversation:', response.messages);
 
 - Message history prefilling is currently limited due to unofficial API usage
 - Rate limits are enforced (25 messages/2 hours for non-premium)
+
+## RinAI Multimodal V-Tuber Integration
+
+This client can be integrated with [RinAI Multimodal V-Tuber](https://github.com/Aggregated-App/rinai-multimodal-vtuber-sui-hackathon) to enable automated tweet scheduling and social media management through an AI agent. The RinAI agent uses this client's API server layer to manage Twitter interactions without requiring direct Twitter API access.
+
+### Setup with RinAI
+
+1. Configure the Twitter client environment variables as specified above
+2. Start the Twitter API server:
+```sh
+npx ts-node server.ts
+```
+3. Verify the server is running at http://localhost:3000
+4. Follow the RinAI setup instructions to connect the agent
+
+### Available RinAI Features
+
+🤖 An open-source AI V-Tuber and desktop agent that combines speech processing, LLMs, and tool automation. Features include:
+
+- 🎙️ Real-time STT/TTS with Groq & 11Labs
+- 🐦 Twitter scheduling & automation
+- 🧠 GraphRAG memory system
+- 🔧 Extensible tool framework
+- 🎮 VTube Studio integration
+- 💬 YouTube chat interaction
+- 💸 ElizaOS Twitter Client Integration
+
+For full documentation on the RinAI integration, please refer to the [RinAI Multimodal V-Tuber repository](https://github.com/Aggregated-App/rinai-multimodal-vtuber-sui-hackathon).
