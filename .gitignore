@@ -119,4 +119,6 @@ docs/
 yarn.lock
 
 cookies.json
+cookies-default.json
+cookies-*.json
 .DS_Store
